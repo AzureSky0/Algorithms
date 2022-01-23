@@ -1,0 +1,13 @@
+theSeq=[5,8,6,9,3,2,10,1,22]
+
+def bubbleSort(theSeq):
+    n=len(theSeq)
+    for i in range(n-1):
+        for j in range(n-1-i):
+            if theSeq[j]>theSeq[j+1]:
+                tmp=theSeq[j]
+                theSeq[j]=theSeq[j+1]
+                theSeq[j+1]=tmp
+            print(theSeq)
+    print(f'\nSorted sequence = {theSeq}')
+bubbleSort(theSeq)
